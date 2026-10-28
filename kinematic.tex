@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[left=2cm,top=1cm,right=3cm,nohead,nofoot]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{chngpage}
+\begin{document}
+From Ottino ``Kinematics of Mixing'', 1981.$\\$
+
+Let $\vec{X}$ be an n-vector from the coordinate origin to a particle at time t = 0. Let $\vec{\Phi}_t(\vec{X})$ be a one parametre family of n-diffeomorphisms which describe the flow of the fluid, such that
+\begin{align*}
+\{\vec{\Phi}_t(\vec{X}) : \mathbb{R} \times \mathbb{R}^n \mapsto \mathbb{R}^n\;\;\text{ and }\;\; \vec{x} &= \vec{\Phi}_t(\vec{X})\}
+\end{align*}
+ so $\vec{x}$ is the position of the particle at $\vec{X}$ at time t.$\\ \\$
+Let $\{V_0\}$ be a set of n-vectors representing a volume in space containing the collection of particles $\{\vec{X}\}$ at time $t=0$, so $\{V_0\} = \{\vec{X}\}\text{.}\\ \\$
+Let $\{V_t\} = \{\vec{x}\} =  \vec{\Phi}_t\{V_0\}$ be the volume containing the particles at time t.$\\$
+$\vec{\Phi}$ is assumed to be an n-diffeomorphism so that no two particles can be at the same place at the same time, and one particle will never break into two. For this proof we only use the properties of $\vec{\Phi}_t$ as a homeomorphism.$\\$
+Problem 2.2.2:$\;\;\; \text{Show that }\vec{\Phi}_t\{\partial V_0\} = \{\partial V_t\}\\ \\$
+Proof: $\\ \\$
+Consider $\overline{\{V_0\}} = \{V_0\} \cup \{\partial V_0\}$, the closure of $V_0$.\\
+\begin{align*}
+\vec{\Phi}_t\{V_0\cup\partial{V_0}\}&= \vec{\Phi}_t \{\overline{\{V_0\}}\}\\
+&= \overline{ \vec{\Phi}_t\{V_0\}  } \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{ because } \vec{\Phi}_t \text{ is a homeomorphism. }\\
+&= \overline{V_t}\\
+&=\{V_t\} \cup \{\partial V_t\}\\
+&=\vec{\Phi}_t\{V_0\} \cup \{\partial V_t\}\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;(1)\\
+\therefore \{\partial V_t\} &= ( \vec{\Phi}_t \{V_0\} \cup \{\partial V_t\}) \setminus \vec{\Phi}_t \{V_0\} \\
+&= \vec{\Phi}_t\{ V_0 \cup \partial V_0\} \setminus \vec{\Phi}_t\{V_0\}\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{using (1)}\\
+&= (\vec{\Phi}_t\{V_0\} \cup \vec{\Phi}_t \{\partial V_0\})\setminus \vec{\Phi}_t\{V_0\} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{ because } \vec{\Phi}_t \text{ is a homeomorphism}\\
+&= \vec{\Phi}_t \{\partial V_0\}
+\end{align*}Claim: Homeomorphic flow $\implies$ kinematic boundary condition is satisfied.$\\ \\$
+Proof: Consider a surface in $\mathbb{R} ^n$ at time t, $\{\partial V_t\}$,  defined by the level sets 
+$\\ \{\partial V_t\} = \{\vec{x} \in \mathbb{R}^n \mid x^i = \upsilon ^i (x^1,x^2,...,x^{i-1},x^{i+1},...,x^n,t) \}\\$
+So $\upsilon ^i$ is the i-slice of the level set defined by the surface $\{\Upsilon (x^1,...,x^n,t) = 0\}$
+
+Now $\vec{\Phi}_t$ a homeomorphism $\implies \text{if } \vec{x_0} \in \{\partial V_0\}$ at time t=0, then $\vec{\Phi}_t(\vec{x_0}) = \vec{x_t} \in \{\partial V_t\}\\$
+ because $ \vec{\Phi}_t\{\partial V_0\} = \{\partial V_t\} \\ \\$
+Now consider $\\$
+
+\begin{align}\frac{D(\Phi^i_t(\vec{x_0}) - \upsilon^i(x^1,...,x^n,t))}{Dt} 
+	&= \frac{\partial \Phi^i_t(\vec{x_0})}{\partial t} - \frac{\partial \upsilon}{\partial t} + 
+		v_j\frac{\partial \Phi^i_t(\vec{x_0})}{\partial x_j} - v_j\frac{\partial \upsilon^i_t}{\partial x_j}
+\end{align}
+The first term $\frac{\partial \Phi^i_t(\vec{x_0})}{\partial t}$ = 0 because $\partial \Phi^i_t(\vec{x_0})$ is the i$^{\text{th}}$ coordinate position of $\vec{x_0}$ at fixed time t.$\\$
+The third term is $v_j\frac{\partial \Phi^i_t(\vec{x_0})}{\partial x_j}$ 
+	= $ v_i \frac{\partial \Phi^i_t(\vec{x_0})}{\partial x_i} $ where no summation occurs over the i$^{\text{th}}$ index, because 
+\begin{align*}
+\end{align*}
+
+\end{document}
