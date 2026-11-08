@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+
+
+\begin{document}
+
+\title {Bijectivity and the double angle formula}
+\maketitle
+		
+
+\centerline{\textbf{Injection, surjection, and bijection}}
+
+\bigskip
+Let us repeat the definitions from class. Suppose $f:X \mapsto Y$ is a map from $X$ to $Y$.
+\\
+
+\textbf{Def}: $f$ is \textbf{injective} if
+\begin{center}$\forall \  a$, $b \in X$, $a \ne b \implies f(a) \ne f(b)$\end{center}
+This is also called a \textbf{one-to-one} map. 
+
+\textbf{Def}: $f$ is \textbf{surjective} if \\
+\begin{center} $\forall \ y\  \in \  Y\  \exists \  x\  \in \  X$ such that $f(x) = y$ \end{center}
+This is also called an \textbf{onto} map.
+\\
+\textbf{Def}: $f$ is \textbf{bijective} if it is bother injective and surjective
+
+\medskip
+
+\begin{enumerate}
+	\item{Draw a picture to illustrate a map which is injective but not surjective} 
+	\item{Draw a map which is surjective but not injective}
+	\item{Prove that a function would have to be bijective in order to be invertible.}
+	Proof outline: Consider what happens to the domain and range of a function (including all points within them) when it is inverted. Now consider why invertibility will fail if a function is not injective, and then again if it is not surjective.
+
+\end{enumerate}
+\bigskip
+\centerline{\textbf{Double angle formula}}
+\medskip
+The sine double angle formula is
+\\
+\centerline{$sin(2\theta) = 2sin(\theta)cos(\theta)$}
+\\
+\\
+Draw a unit circle and inscribe a triangle such that two points are on the circle, and one point is at the centre of the circle. An illustration is included below. Use the \textbf{Inscribed Angle Theorem} to prove the double angle formula above as follows.
+\begin{enumerate}
+	\item{Come up with an expression for the area of the triangle (You might choose to use the area of the parallelogram formed by the triangle)}
+	\item{Bisect that triangle into two right triangles. Find an expression for the area for these right triangles.}
+	\item{Note that the area of the large triangle must be the same as the area of the sum of the two small triangles.}
+\begin{figure}[htbp]
+        \centering
+        \includegraphics[angle=0,width=1.0\textwidth]{double_angle.jpg}
+        \caption{Geometry of proof}
+\end{figure}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+\end{document}
